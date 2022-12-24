@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/yarab/untitled1/android/app/src/debug/debug.iml" filepath="$PROJECT_DIR$/yarab/untitled1/android/app/src/debug/debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fitness App.iml" filepath="$PROJECT_DIR$/fitness App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yarab/untitled1/android/app/src/profile/profile.iml" filepath="$PROJECT_DIR$/yarab/untitled1/android/app/src/profile/profile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yarab/untitled1/untitled1.iml" filepath="$PROJECT_DIR$/yarab/untitled1/untitled1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yarab/untitled1/android/untitled1_android.iml" filepath="$PROJECT_DIR$/yarab/untitled1/android/untitled1_android.iml" />
+    </modules>
+  </component>
+</project>

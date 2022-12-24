@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "213140479137",
+    "project_id": "vibesfinalprojgym1",
+    "storage_bucket": "vibesfinalprojgym1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213140479137:android:1f2f43edfc2dc6180fe4e0",
+        "android_client_info": {
+          "package_name": "com.example.yarab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213140479137-k7hbvpmmo99bs42ao9vs5hpe3g4bvt56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCc3korPp5nLej5xZGBCrOmzd9VQ99RR6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213140479137-k7hbvpmmo99bs42ao9vs5hpe3g4bvt56.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
