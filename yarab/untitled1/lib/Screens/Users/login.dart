@@ -151,12 +151,12 @@ class Login extends State<myLogin> {
                       onPressed: () {
                         final form = Thekey.currentState;
                         if (form!.validate()) {
-                          // Navigator.push(
-                          //   context,
-                          //   MaterialPageRoute(
-                          //       builder: (context) => FitnessApp()),
-                          // );
-                          context.go('/Page2');
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => FitnessApp()),
+                          );
+                          // context.go('/Page2');
                         }
                       },
                     ),
@@ -173,12 +173,12 @@ class Login extends State<myLogin> {
                         foregroundColor: Colors.deepOrange,
                       ),
                       onPressed: () => {
-                        context.go('/Page2')
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //       builder: (context) => const Register()),
-                        // );
+                        //context.go('/Page2')
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Register()),
+                        )
                       },
                     )
                     // const Padding(
