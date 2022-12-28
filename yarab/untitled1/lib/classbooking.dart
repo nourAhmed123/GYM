@@ -15,16 +15,22 @@ class Booking extends StatefulWidget {
 }
 
 class classbooking extends State<Booking> {
+  bool _isFavorited = true;
+  // int _favoriteCount = 20;
+
   int _boxcount = 20;
   int _flexcount = 15;
   int _zumbacount = 20;
   int _bodycount = 20;
   void incerementcounter() {
     setState(() {
-      _bodycount -= 1;
-      _boxcount--;
-      _flexcount--;
-      _zumbacount--;
+      if (_isFavorited) {
+        _boxcount -= 1;
+        _isFavorited = false;
+      } else {
+        _boxcount += 1;
+        _isFavorited = true;
+      }
     });
   }
 
@@ -43,25 +49,25 @@ class classbooking extends State<Booking> {
             Instructor: "Mariam",
             classname: "Boxing Class",
             Duration: "09:00 am-10:00 am (60min)",
-            Spots: '$_boxcount' " Spots left",
+            // Spots: '$_boxcount' " Spots left",
           ),
           Book_Tile(
             Instructor: "Nesma",
             classname: "Flexibility",
             Duration: "09:00 am-10:00 am (60min)",
-            Spots: '$_flexcount' "Spots left",
+            // Spots: '$_flexcount' "Spots left",
           ),
           Book_Tile(
             Instructor: "Shimo",
             classname: "Zumba",
             Duration: "09:00 am-10:00 am (60min)",
-            Spots: "13 Spots left",
+            // Spots: "13 Spots left",
           ),
           Book_Tile(
             Instructor: "Sara",
             classname: "Body Pump",
             Duration: "09:00 am-10:00 am (60min)",
-            Spots: "9 Spots left",
+            //  Spots: "9 Spots left",
           ),
         ],
       ),

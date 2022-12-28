@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:213140479137:android:1f2f43edfc2dc6180fe4e0",
+        "mobilesdk_app_id": "1:213140479137:android:16d67d263da631a30fe4e0",
         "android_client_info": {
           "package_name": "com.example.yarab"
         }
@@ -29,6 +29,13 @@
             {
               "client_id": "213140479137-k7hbvpmmo99bs42ao9vs5hpe3g4bvt56.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "213140479137-0sb0740m94t38jj9m3n4ioioetv6gmdd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.untitled1"
+              }
             }
           ]
         }

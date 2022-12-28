@@ -139,27 +139,26 @@ class Login extends State<myLogin> {
                     ),
 
                     ElevatedButton(
-                      child: Text('LOGIN'),
-                      style: ElevatedButton.styleFrom(
-                        primary: Color(0xFF9340BA),
-                        minimumSize: Size(200, 50),
-                        textStyle: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      onPressed: () {
-                        final form = Thekey.currentState;
-                        if (form!.validate()) {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => FitnessApp()),
-                          );
-                          // context.go('/Page2');
-                        }
-                      },
-                    ),
+                        child: Text('LOGIN'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Color(0xFF9340BA),
+                          minimumSize: Size(200, 50),
+                          textStyle: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        onPressed: () {
+                          final form = Thekey.currentState;
+                          if (form!.validate()) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => FitnessApp()),
+                            );
+                            // context.go('fitness');
+                          }
+                        }),
 
                     TextButton(
                       child: Text('Don’t have an account? Register!'),
@@ -173,7 +172,7 @@ class Login extends State<myLogin> {
                         foregroundColor: Colors.deepOrange,
                       ),
                       onPressed: () => {
-                        //context.go('/Page2')
+                        // context.go('/Page2')
                         Navigator.push(
                           context,
                           MaterialPageRoute(

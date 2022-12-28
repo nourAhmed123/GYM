@@ -4,6 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:yarab/Screens/Users/login.dart';
+import 'package:yarab/Screens/Users/register.dart';
+import 'package:yarab/Screens/Users/welcomepage.dart';
 
 import 'Screens/Users/fitnessApp.dart';
 
@@ -21,13 +23,19 @@ class Myapp extends StatelessWidget {
       GoRoute(
         routes: <GoRoute>[
           GoRoute(
-            path: 'page2',
+            path: 'fitnessApp',
             builder: (BuildContext context, GoRouterState state) =>
                 const FitnessApp(),
           ),
+          GoRoute(
+            path: 'fess',
+            builder: (BuildContext context, GoRouterState state) =>
+                const Register(),
+          ),
         ],
         path: '/',
-        builder: (BuildContext context, GoRouterState state) => const myLogin(),
+        builder: (BuildContext context, GoRouterState state) =>
+            const Welcomepage(),
       ),
     ],
   );

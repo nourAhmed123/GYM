@@ -1,9 +1,11 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:yarab/Screens/Users/login.dart';
 import 'package:yarab/Screens/Users/register.dart';
 import 'package:yarab/Screens/Admins/loginAdmin.dart';
+import 'package:go_router/go_router.dart';
 
-class Welcomepage extends StatelessWidget{
+class Welcomepage extends StatelessWidget {
   const Welcomepage({Key? key}) : super(key: key);
   // Widget build(BuildContext context) { //context is an object of a type BuildContext
   //       return MaterialApp(home: Scaffold(
@@ -38,22 +40,44 @@ class Welcomepage extends StatelessWidget{
                     padding: EdgeInsets.only(bottom: 650.0, right: 0),
                     child: const Text(
                       'VIBES GYM',
-
-
-                      style: TextStyle(color: Color(0xF2CAADCC),
+                      style: TextStyle(
+                          color: Color(0xF2CAADCC),
                           shadows: [
-                            Shadow(color: Colors.black38, offset: Offset(3,3), blurRadius:2)
+                            Shadow(
+                                color: Colors.black38,
+                                offset: Offset(3, 3),
+                                blurRadius: 2)
                           ],
                           fontWeight: FontWeight.w900,
                           fontStyle: FontStyle.italic,
                           fontSize: 50.0),
-
                     ),
                   ),
                   Padding(
                       padding: EdgeInsets.fromLTRB(0, 60, 10, 130),
                       child: ElevatedButton(
                         child: Text('Login'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Color(0xFFCAADCC),
+                          minimumSize: Size(180, 43),
+                          textStyle: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 30,
+                              fontStyle: FontStyle.italic,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => myLogin()),
+                          );
+                        },
+                      )),
+                  /////////////////////////
+                  Padding(
+                      padding: EdgeInsets.fromLTRB(0, 60, 10, 190),
+                      child: ElevatedButton(
+                        child: Text('Register'),
                         style: ElevatedButton.styleFrom(
                           primary: Color(0xFFCAADCC),
                           minimumSize: Size(180, 43),
@@ -64,35 +88,13 @@ class Welcomepage extends StatelessWidget{
                               fontWeight: FontWeight.bold),
                         ),
                         onPressed: () {
-                        Navigator.push(
-                         context,
-                         MaterialPageRoute(builder: (context) =>  myLogin()),
-                         );
-                          },
-                      )
-                  ),
-                  /////////////////////////
-                       Padding(
-                      padding: EdgeInsets.fromLTRB(0, 60, 10, 190),
-                           child: ElevatedButton(
-                             child: Text('Register'),
-                             style: ElevatedButton.styleFrom(
-                               primary: Color(0xFFCAADCC),
-                               minimumSize: Size(180, 43),
-                               textStyle: const TextStyle(
-                                   color: Colors.white,
-                                   fontSize: 30,
-                                   fontStyle: FontStyle.italic,
-                                   fontWeight: FontWeight.bold),
-                             ),
-                             onPressed: () {
-                               Navigator.push(
-                                 context,
-                                 MaterialPageRoute(builder: (context) => const Register()),
-                               );
-                             },
-                           )
-                  ),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Register()),
+                          );
+                        },
+                      )),
                   Padding(
                       padding: EdgeInsets.fromLTRB(0, 60, 10, 70),
                       child: ElevatedButton(
@@ -109,14 +111,13 @@ class Welcomepage extends StatelessWidget{
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => const LoginAdmin()),
+                            MaterialPageRoute(
+                                builder: (context) => const LoginAdmin()),
                           );
                         },
-                      )
-                  ),
+                      )),
                 ],
               ),
-
             ], //<Widget>[]
           ), //Column
         ), //Center
